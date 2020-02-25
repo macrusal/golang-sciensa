@@ -4,10 +4,15 @@ API REST para consulta de CEP.
 
 # Arquitetura da Aplicação
 * Golang
+* Go Modules
+* Struct
+* Server mux
+* net/HTTP
+* JSon
 * Git
 
 # Aplicação
-Consulta de CEP através dos serviços:
+Consulta de CEP utilizando a concorrência do Go para realizar diversas requisições simultâneas para cada um dos serviços de CEP e pegar a resposta dos serviços que responderem mais rapidamente.
 * Postmon
 * Republic Virtual
 * ViaCep
